@@ -1,0 +1,6 @@
+[user]
+	name = ysato
+	email = 56924527+ysato@users.noreply.github.com
+	signingkey = DUMMY_SIGNINGKEY
+[commit]
+	gpgsign = true
