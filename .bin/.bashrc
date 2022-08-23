@@ -3,4 +3,4 @@ alias ls="ls -F"
 alias ll="ls -lF"
 alias la="ls -laF"
 
-eval "$(starship init bash)"
+eval "$(/opt/homebrew/bin/starship init bash)"
