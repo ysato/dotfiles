@@ -12,6 +12,9 @@ fi
 # Use dark menu bar and dock
 defaults write NSGlobalDomain AppleInterfaceStyle -string Dark
 
+# Disable press-and-hold for keys in favor of key repeat
+defaults write 'Apple Global Domain' ApplePressAndHoldEnabled -bool false
+
 # ライブ変換
 defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool false
 
