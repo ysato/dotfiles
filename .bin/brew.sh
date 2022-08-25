@@ -17,6 +17,7 @@ brew install pinentry-mac
 
 brew install aws-shell
 brew install mas
+brew install nodenv
 
 # Install nerd fonts
 brew tap homebrew/cask-fonts

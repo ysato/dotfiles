@@ -8,3 +8,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Set brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Set nodenv
+eval "$(nodenv init -)"
