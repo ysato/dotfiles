@@ -40,6 +40,22 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 164 "
   </dict>
 "
 
+# 前の入力ソースを選択
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 "
+  <dict>
+    <key>enabled</key><false/>
+    <key>value</key><dict>
+      <key>parameters</key>
+      <array>
+        <integer>32</integer>
+        <integer>49</integer>
+        <integer>262144</integer>
+      </array>
+      <key>type</key><string>standard</string>
+    </dict>
+  </dict>
+"
+
 ###############################################################################
 # Dock                                                                        #
 ###############################################################################
