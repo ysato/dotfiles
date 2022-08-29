@@ -11,3 +11,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Set nodenv
 eval "$(nodenv init -)"
+
+# Set GPG
+export GPG_TTY=$(tty)
+
