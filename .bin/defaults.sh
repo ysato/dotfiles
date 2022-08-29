@@ -73,6 +73,9 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 # Show all file extensions inside the Finder
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+# Set list view as standard
+defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
