@@ -17,7 +17,6 @@ brew install pinentry-mac
 
 # Install AWS command-line interface
 brew install awscli
-brew install aws-shell
 
 brew install mas
 brew install nodenv
