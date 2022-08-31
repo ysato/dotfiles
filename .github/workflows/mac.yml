@@ -1,0 +1,27 @@
+name: Mac CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set initial preference.
+      run: make init
+      
+    - name: Link dotfiles.
+      run: make link
+      
+    - name: Set macOS system preferences.
+      run: make defaults
+          
+    - name: Install macOS applications.
+      run: source ~/.bash_profile && make brew
