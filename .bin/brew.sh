@@ -23,7 +23,7 @@ brew install nodenv
 
 # Install nerd fonts
 brew tap homebrew/cask-fonts
-brew install --cask font-jetbrains-mono
+brew install --cask font-jetbrains-mono-nerd-font
 
 # Install starship
 brew install starship
