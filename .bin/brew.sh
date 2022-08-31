@@ -28,6 +28,9 @@ brew install --cask font-jetbrains-mono-nerd-font
 # Install starship
 brew install starship
 
+# Install jq
+brew install jq
+
 brew install --cask 1password
 brew install --cask clipy
 brew install --cask docker
