@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env zsh
+
 set -e
 
 echo "🧩 Applying macOS defaults..."

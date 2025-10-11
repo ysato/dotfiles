@@ -1,8 +1,0 @@
-# ~/.zshrc (managed by chezmoi)
-
-# ===== Homebrew (Apple Silicon) =====
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# ===== 1Password CLI =====
-# 1Passwordアプリ連携により自動で認証されるため設定不要
-# 'op' コマンドが直接動作します
