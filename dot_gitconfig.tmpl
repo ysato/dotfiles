@@ -1,7 +1,7 @@
 # ~/.gitconfig (managed by chezmoi)
 
 [user]
-    signingkey = "{{ (output "op read 'op://Private/Git Settings/public_key'") }}"
+    signingkey = {{ onepasswordRead "op://Private/Git Settings/public_key" }}
 
 [gpg]
     format = ssh
