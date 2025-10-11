@@ -7,6 +7,10 @@ if ! command -v brew &> /dev/null; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+echo >> /Users/sato/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/sato/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # 必要ツールを導入（chezmoi / 1Password CLI）
 brew install chezmoi 1password-cli
 
