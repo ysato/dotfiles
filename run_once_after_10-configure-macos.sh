@@ -25,4 +25,8 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # 隠しファイルを表示する設定
 defaults write com.apple.Finder AppleShowAllFiles -bool true
 
+# 「前の入力ソースを選択」をオフ（キーID 60）
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 "<dict><key>enabled</key><false/></dict>"
+
+
 echo "✅ macOS defaults applied"

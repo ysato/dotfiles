@@ -1,4 +1,6 @@
 [user]
+    name = {{ onepasswordRead "op://Private/Git Settings/name" }}
+    email = {{ onepasswordRead "op://Private/Git Settings/email" }}
     signingkey = {{ onepasswordRead "op://Private/Git Settings/public_key" }}
 
 [gpg]
