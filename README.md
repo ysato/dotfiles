@@ -1,9 +1,25 @@
 # dotfiles
 
-```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin init ysato --apply
-```
+Managed with [`chezmoi`](https://github.com/twpayne/chezmoi).
+
+## Getting Started
+
+### Prerequisites
+
+* homebrew
+  ```sh
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
+  ```shell
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  ```
+* chezmoi
+  ```sh
+  brew install chezmoi
+  ```
+
+### Installation
 
 ```bash
-chezmoi apply
+chezmoi init ysato --apply
 ```
