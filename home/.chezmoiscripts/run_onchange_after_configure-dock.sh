@@ -7,16 +7,18 @@ trap 'killall Dock' EXIT
 declare -a remove_labels=(
     Launchpad
 	Safari
-	Messages
-	Mail
-	Maps
-	Photos
+	"メッセージ"
+	"メール"
+	"マップ"
+	"写真"
 	FaceTime
-	Calendar
-	Contacts
-	Freeform
+	"カレンダー"
+	"連絡先"
+	"リマインダー"
+	"メモ"
+	"フリーボード"
 	TV
-	Music
+	"ミュージック"
 	Keynote
 	Numbers
 	Pages
