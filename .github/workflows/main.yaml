@@ -1,0 +1,50 @@
+name: macOS
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+
+      - name: Update homebrew
+        run: |
+          brew update
+
+      - name: Install chezmoi
+        run: |
+          brew install chezmoi
+
+      - name: Install bats
+        run: |
+          brew install bats-core
+
+      - name: Initialize dotfiles
+        run: |
+          chezmoi init ysato
+
+      - name: Run scripts
+        run: |
+          cd $(chezmoi source-path)
+          bash .chezmoiscripts/run_onchange_before_configure-brew.bash
+          bash .chezmoiscripts/run_onchange_before_install-packages.bash
+          bash .chezmoiscripts/run_onchange_after_configure-defaults.bash
+          bash .chezmoiscripts/run_onchange_after_configure-docks.bash
+
+      - name: Run tests
+        run: |
+          cd $(chezmoi source-path)/../
+          bats --print-output-on-failure \
+            tests/run_onchange_before_configure-brew.bats \
+            tests/run_onchange_before_install-packages.bats \
+            tests/run_onchange_after_configure-defaults.bats \
+            tests/run_onchange_after_configure-docks.bats
