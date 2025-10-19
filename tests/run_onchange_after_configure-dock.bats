@@ -16,9 +16,6 @@
     	"フリーボード"
     	TV
     	"ミュージック"
-    	Keynote
-    	Numbers
-    	Pages
     	"App Store"
     )
 
