@@ -3,3 +3,7 @@ fpath+=("{{ output "/opt/homebrew/bin/brew" "--prefix" | trim }}/share/zsh/site-
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 {{ end -}}
+
+# Added by Toolbox App
+export PATH="$PATH:/Users/sato/Library/Application Support/JetBrains/Toolbox/scripts"
+
