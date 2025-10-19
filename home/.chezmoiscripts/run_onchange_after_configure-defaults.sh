@@ -8,6 +8,9 @@ defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool fals
 # 日本語入力（ことえり）で自動修正（誤字などの自動置換）を無効にする設定
 defaults write com.apple.inputmethod.Kotoeri JIMPrefAutocorrectionKey -bool false
 
+# 「前の入力ソースを選択」をオフ（キーID 60）
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 "<dict><key>enabled</key><false/></dict>"
+
 # キー長押しで文字を連続入力（リピート入力）できるようにし、アクセント文字選択メニューを無効にする
 defaults write -g ApplePressAndHoldEnabled -bool false
 
