@@ -18,7 +18,7 @@
     # 「前の入力ソースを選択」をオフ（キーID 60）
     run /usr/libexec/PlistBuddy -c "Print :AppleSymbolicHotKeys:60:enabled" ~/Library/Preferences/com.apple.symbolichotkeys.plist
     [ "${status}" -eq 0 ]
-    [ "${output}" -eq 0 ]
+    [ "${output}" = "false" ]
 
     # キー長押しで文字を連続入力（リピート入力）できるようにし、アクセント文字選択メニューを無効にする
     run defaults read -g ApplePressAndHoldEnabled
